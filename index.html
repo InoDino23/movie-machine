@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <img src="assets/background.png" class="background-image">
+
+        <div class="settings">
+
+            <div class="setting">
+                <label for="minYear">Von</label>
+                <select id="minYear"></select>
+            </div>
+
+            <div class="setting">
+                <label for="maxYear">Bis</label>
+                <select id="maxYear"></select>
+            </div>
+
+        </div>
+
+        <div class="machine">
+
+            <div class="lever">
+                <div class="lever-arm">
+                    <img src="assets/lever_stick.png" class="lever-stick">
+                    <img src="assets/lever_ball.png" class="lever-ball" id="spinButton">
+                </div>
+            </div>
+
+            <img src="assets/machine_frame.png" class="machine-frame">
+
+            <div class="slots">
+                <div class="slot">
+                    <div class="reel" id="yearReel"></div>
+                    <img src="assets/reel_window.png" class="reel-window">
+                </div>
+
+                <div class="slot">
+                    <div class="reel" id="genreReel"></div>
+                    <img src="assets/reel_window.png" class="reel-window">
+                </div>
+
+                <div class="slot">
+                    <div class="reel" id="plotReel"></div>
+                    <img src="assets/reel_window.png" class="reel-window">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
